@@ -1,4 +1,4 @@
-# Tripnow ChallengeMindhubGrupo2
+# ChallengeMindhubGrupo2
 Challenge final E-commerce
 Condiciones:
 Temática del proyecto: MARKETPLACE/E-COMMERCE.  
