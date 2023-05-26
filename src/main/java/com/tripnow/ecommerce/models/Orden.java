@@ -28,7 +28,17 @@ public class Orden {
     @JoinColumn(name = "pago_id")
     private Pago pago;*/
 
-    /* en clase Pago poner:
-   @OneToOne(mappedBy = "pago_id")
-    private Orden orden;*/
+
+    public Orden(){};
+
+    public Orden(LocalDateTime fechaCreacion, boolean activa, int cantidadPasajeros, double precioTotalPaquetes ){
+    this.fechaCreacion = fechaCreacion;
+    this.activa=activa;
+    this.cantidadPasajeros =cantidadPasajeros;
+    this.precioTotalPaquetes=precioTotalPaquetes;
+    };
+
+    //Metodos accesores:
+
+
 }

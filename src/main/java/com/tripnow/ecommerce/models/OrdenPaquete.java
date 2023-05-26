@@ -1,6 +1,5 @@
 package com.tripnow.ecommerce.models;
 import org.hibernate.annotations.GenericGenerator;
-
 import javax.persistence.*;
 
 @Entity
@@ -12,7 +11,6 @@ public class OrdenPaquete {
     private long id;
     private double precioPaquete;
 
-
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="orden_id")
     private Orden orden;
@@ -21,5 +19,12 @@ public class OrdenPaquete {
     @JoinColumn(name="paquete_id")
     private Paquete paquete;*/
 
+    public OrdenPaquete(){};
+
+    public OrdenPaquete(double precioPaquete){
+        this.precioPaquete=precioPaquete;
+    };
+
+    //Metodos accesores:
 
 }
